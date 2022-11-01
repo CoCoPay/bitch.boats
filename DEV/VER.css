@@ -36,4 +36,6 @@
     padding-right: 137px;
     padding-left: 137px;
   }
+}.gif {
+    -webkit-transform: rotateX(0);
 }
