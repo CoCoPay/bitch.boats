@@ -36,12 +36,20 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-text-1 {
+    width: auto;
+    margin-right: 0;
+  }
 }.u-section-3 .u-sheet-1 {
   min-height: 215px;
 }
 
 .u-section-3 .u-btn-1 {
   background-image: none;
+  border-style: solid;
   margin: 85px auto;
   padding: 10px 229px 10px 227px;
 }
