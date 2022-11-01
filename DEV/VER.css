@@ -13,7 +13,11 @@
   margin-bottom: 0;
   height: auto;
   min-height: 366px;
-  background-image: none;
+  animation-timing-function: ease-in;
+  --animation-custom_in-opacity: 0.6;
+  --animation-custom_in-scale: 0.91;
+  transition-duration: 0.25s;
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
 }
 
 .u-section-2 .u-btn-1 {
@@ -36,6 +40,28 @@
     padding-right: 137px;
     padding-left: 137px;
   }
+}
+
+.u-section-2 .u-custom-html-1,
+.u-section-2 .u-custom-html-1:before,
+.u-section-2 .u-custom-html-1 > .u-container-layout:before {
+  transition-property: fill, color, background-color, stroke-width, border-style, border-width, border-top-width, border-left-width, border-right-width, border-bottom-width, custom-border, borders, box-shadow, text-shadow, opacity, border-radius, stroke, border-color, font-size, font-style, font-weight, text-decoration, letter-spacing, transform, background-image, image-zoom, background-size, background-position;
+}
+
+.u-section-2 .u-custom-html-1.u-custom-html-1.u-custom-html-1:hover {
+  transform: scale(1.02) translateX(0px) translateY(0px) !important;
+}
+
+.u-section-2 .u-custom-html-1.u-custom-html-1.u-custom-html-1.hover {
+  transform: scale(1.02) translateX(0px) translateY(0px) !important;
+}
+
+.u-section-2 .u-container-layout:hover .u-custom-html-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
+}
+
+.u-container-layout.hover .u-section-2 .u-custom-html-1 {
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px) !important;
 }.animClass {
 	-webkit-transform: translate3d(0, 0, 0);
 	-webkit-backface-visibility: hidden;
